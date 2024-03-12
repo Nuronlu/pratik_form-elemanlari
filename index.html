@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patika+ | HTML | Form elementleri </title>
+</head>
+<body>
+    <!-- Form olusturmak ve veri almak: form etiketi icinde calisiyoruz. -->
+
+    <form action="">
+        <!-- input etiketi, form etiketi icinde kullanilmazsa, buton calismaz. -->
+        
+        Kullanici Adi: <br>
+        <input type="text"> <br>
+        
+        Kullanici Soyadi: <br>
+        <input type="text"> <br>
+        
+        E-posta: <br> <Input type="email" required><br>
+        
+        <!-- gecersiz e-posta uyarisi icin: E-posta kisminda Input type="email" olmali, text degil; ayrica required girmemiz lazim.-->
+        
+        Parolaniz: <br> <input type="password" placeholder="Parolanizi buraya giriniz."><br><br><br>
+        
+        Cinsiyetiniz: <br>
+        Kadin: <input type="radio" name="cinsiyet"><br>
+        Erkek: <input type="radio" name="cinsiyet"><br><br><br>
+        <hr>
+        <!-- select etiketi icinde option etiketi kullanarak acilir liste seklinde bir form olusturabiliriz: -->
+        Favori meyvenizi seciniz: <br>
+        <select>
+            <option value="">Elma</option>
+            <option value="">Portakal</option>
+            <option value="">Mandalina</option>
+            <option value="">Kivi</option>
+        </select><br><br><br>
+        <hr>
+        <!-- textarea etiketi, metin alani anlamina geliyor. -->
+        <textarea name="mesaj" id="mesajkutusu" cols="80" rows="6" placeholder="Lutfen iletmek isteginiz mesaji giriniz."></textarea><br><br><br>
+
+        <!-- gonderme/resetleme ozelligi olan buton olusturma-buton adini value degeri icinde gireriz -->
+        <input type="submit" value="Gonder."><br>
+
+    </form>
+</body>
+</html>
